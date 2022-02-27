@@ -19,11 +19,11 @@ The Kaplan–Meier estimator is a non-parametric statistic used to estimate the 
 
 The pairwise log-rank test between these 3 groups yield the following results:
 
-| Log-Rank test in between treatments | Test Statistic | p-value |
+| Log-Rank test between treatments | Test Statistic | p-value |
 |----------|---------|-------|
-| Placebo | Pyridoxine | 1.326279 | 0.249468 | 
-| Placebo | Pyridoxine | 1.520945 | 0.217477 |
-| Pyridoxine | Thiotepa | 0.001407 | 0.970077 |
+| Placebo & Pyridoxine | 1.326279 | 0.249468 | 
+| Placebo & Thiotepa | 1.520945 | 0.217477 |
+| Pyridoxine & Thiotepa  | 0.001407 | 0.970077 |
 
 The high p-value from the log-rank test between pyridoxine and thiotepa is indicative of the fact that their survival curves are not quite dissimilar, which is also clear from the graph above. The low p-value between placebo and the other 2 groups supports the fact that their survival curves deviate completely in later time points.
 
