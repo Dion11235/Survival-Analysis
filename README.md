@@ -31,6 +31,11 @@ The Kaplan–Meier estimator is a non-parametric statistic used to estimate the 
 1. the group on pyridoxine has the highest median survival time among all patients.
 2. patients on pyridoxine have a median survival time approximately 4 times greater than the patients on placebo.
 
+<p align="center">
+  <img width="700" height="450"src="/plots/KM1.png"> <br>
+</p>
+
+
 The pairwise log-rank test between these 3 groups yield the following results:
 
 | Log-Rank test between treatments | Test Statistic | p-value |
@@ -45,11 +50,20 @@ Next we have thresholded on the number and size of tumours respectively, on the 
 1. patients with less than 4 tumours have a median survival time approximately 7 times greater than those with greater than or equal to 4 tumours.
 2. patients whose size of the largest initial tumour was less than 6 cm have a median survival time approximately 4 times greater than the other group.
 
+<p align="left">
+  <img width="400" height="250"src="/plots/KM2.png">
+  <img width="400" height="250"src="/plots/KM3.png"> <br>
+</p>
+
 #### Cox-Proportional Hazard Model :
 In the previous section we have worked with the Kaplan-Meier estimator which does not take any covariates into consideration. In this section, we shall be modelling the survival functions by taking into account the 2 covariates - number and size of tumour into the model itself.
 
 **Cox proportional hazards assumptions:**
 Before modelling, we must check whether the covariates follow the Cox proportional hazard assumptions - that the hazards are proportional. This is achieved with the Schoenfeld residuals test, which plots the residual values of the covariates against time to look for time dependency.
+
+<p align="center">
+  <img width="550" height="400"src="/plots/coxph_assumption.png"> <br>
+</p>
 
 As we can clearly see, the covariate residuals do not exhibit any pattern, and are completely random. Also, the p-values for both the covariates are greater than 0.05, hence both the covariates satisfy the proportional hazard assumption, and we can go ahead with modelling. 
 
