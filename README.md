@@ -10,6 +10,20 @@ Further down the study, some of the patients have observed multiple recurrences 
 
 ## Basic EDA :
 
+<p align="center">
+  <img width="200" height="200"src="/plots/pie.png">
+  <img width="300" height="200"src="/plots/bar1.png">
+  <img width="250" height="200"src="/plots/box1.png"><br>
+</p>
+<p align="center">
+  <img width="400" height="300"src="/plots/bar2.png"> <br>
+</p>
+
+Since some of the patients have suffered multiple recurrences, the original data has been divided in 2 parts to deal with single recurrences and multiple recurrences separately :
+- 118 patients with only their first event/censoring times (independent time-to-event)
+- the same 118 patients with all recurrence times (dependent time-to-event)
+
+
 ## Modelling :
 ### First Group Analysis :
 #### Kaplan-Meier Estimate :
